@@ -2,7 +2,7 @@
 
 import os
 from setuptools import setup
-from setuptools  find_packages
+from setuptools import find_packages
 
 
 requires = [
