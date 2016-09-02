@@ -1,0 +1,5 @@
+# ignore python artifacts
+/_env*
+*.pyc
+__pycache__/
+*.egg-info/
