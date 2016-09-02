@@ -37,5 +37,9 @@ Create local virtual environment
     pip install -e .
 
 
+Running Application
+===================
 
+.. code-block::
 
+    pserve --reload development.ini
