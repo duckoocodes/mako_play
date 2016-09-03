@@ -17,3 +17,7 @@ def lesson2(request):
     scrapped_text = "<a href='http://google.com/'>hello</a>"
 
     return {"show_this_text": scrapped_text}
+
+@view_config(route_name='lesson3', renderer='templates/lesson3.mako')
+def lesson3(request):
+    return {"x": 10}
