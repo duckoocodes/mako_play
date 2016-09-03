@@ -21,3 +21,7 @@ def lesson2(request):
 @view_config(route_name='lesson3', renderer='templates/lesson3.mako')
 def lesson3(request):
     return {"x": 10}
+
+@view_config(route_name='lesson4', renderer='templates/lesson4.mako')
+def lesson4(request):
+    return {}
