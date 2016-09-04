@@ -14,7 +14,7 @@ def lesson2(request):
 
     # hey folks, I swear my scraper only returns text so you do not need to
     # escape it!!
-    scrapped_text = "<a href='http://google.com/'>hi all</a>"
+    scrapped_text = "   <a href='http://google.com/'>hi all</a>    "
 
     return {"show_this_text": scrapped_text}
 
@@ -29,3 +29,7 @@ def lesson4(request):
 @view_config(route_name='lesson5', renderer='templates/lesson5.mako')
 def lesson5(request):
     return {}
+
+@view_config(route_name='lesson6', renderer='templates/lesson6.mako')
+def lesson6(request):
+    return {'my_view_var': 'hello'}

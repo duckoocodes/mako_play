@@ -13,5 +13,6 @@ def main(global_config, **settings):
     config.add_route('lesson3', '/lesson3')
     config.add_route('lesson4', '/lesson4')
     config.add_route('lesson5', '/lesson5')
+    config.add_route('lesson6', '/lesson6')
     config.scan()
     return config.make_wsgi_app()
