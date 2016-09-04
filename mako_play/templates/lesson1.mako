@@ -1,1 +1,1 @@
-Hello World: ${my_variable}
+Hello World: ${pow(d,3)}

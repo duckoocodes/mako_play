@@ -7,20 +7,20 @@ def my_view(request):
 
 @view_config(route_name='lesson1',renderer='templates/lesson1.mako')
 def lesson1(request):
-    return {'my_variable': 'this is my very first mako'}
+    return {'d': 4}
 
 @view_config(route_name='lesson2',renderer='templates/lesson2.mako')
 def lesson2(request):
 
     # hey folks, I swear my scraper only returns text so you do not need to
     # escape it!!
-    scrapped_text = "<a href='http://google.com/'>hello</a>"
+    scrapped_text = "<a href='http://google.com/'>hi all</a>"
 
     return {"show_this_text": scrapped_text}
 
 @view_config(route_name='lesson3', renderer='templates/lesson3.mako')
 def lesson3(request):
-    return {"x": 10}
+    return {"x": 40}
 
 @view_config(route_name='lesson4', renderer='templates/lesson4.mako')
 def lesson4(request):

@@ -1,14 +1,14 @@
-% for text_number in ['one', 'two', 'three', 'four', 'five']:
-${loop.reverse_index}
+% for text_number in ['fifty', 'twenty', 'thirty', 'forty', 'ten', 'sixty']:
+${loop.index}
 ${loop.even}
 ${loop.first}
-## show valude of text_number
+## show value of text_number
 ${text_number}:
     % if text_number[0] == 't':
-        it is two or three <br />
+        it is ten, twenty, or thirty <br />
     % elif text_number[0] == 'f':
-        it is four or five <br />
+        it is forty or fifty <br />
     % else:
-        it is one <br />
+        it is sixty <br />
     % endif
 % endfor
