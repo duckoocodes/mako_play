@@ -14,5 +14,7 @@ def main(global_config, **settings):
     config.add_route('lesson4', '/lesson4')
     config.add_route('lesson5', '/lesson5')
     config.add_route('lesson6', '/lesson6')
+    config.add_route('lesson7', '/lesson7')
+    config.add_route('lesson8', '/lesson8')
     config.scan()
     return config.make_wsgi_app()

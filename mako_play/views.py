@@ -33,3 +33,11 @@ def lesson5(request):
 @view_config(route_name='lesson6', renderer='templates/lesson6.mako')
 def lesson6(request):
     return {'my_view_var': 'hello'}
+
+@view_config(route_name="lesson7", renderer ='templates/lesson7.mako')
+def lesson7(request):
+    return {}
+
+@view_config(route_name="lesson8", renderer ='templates/lesson8/lesson8.mako')
+def lesson8(request):
+    return {}
